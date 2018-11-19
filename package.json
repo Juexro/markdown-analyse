@@ -1,0 +1,33 @@
+{
+  "name": "@juexro/markdown2html",
+  "version": "1.0.0",
+  "description": "Analyse markdown to html for nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juexro/markdown-analyse.git"
+  },
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "markdown",
+    "markdown"
+  ],
+  "author": "Juexro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Juexro/markdown-analyse/issues"
+  },
+  "homepage": "https://github.com/Juexro/markdown-analyse#readme",
+  "dependencies": {
+    "@juexro/markdown-it-highlight-code-block": "^1.0.1",
+    "highlight.js": "^9.13.1",
+    "markdown-it": "^8.4.2"
+  }
+}
