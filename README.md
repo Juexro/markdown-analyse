@@ -1,8 +1,6 @@
 # markdown2html
 
-[![](https://img.shields.io/npm/v/@juexro/markdown2html.svg)](https://www.npmjs.com/package/@juexro/markdown2html)
-
-[![](https://img.shields.io/npm/dm/@juexro/@juexro/markdown2html.svg)](https://www.npmjs.com/package/@juexro/markdown2html)
+[![](https://img.shields.io/npm/v/@juexro/markdown2html.svg)](https://www.npmjs.com/package/@juexro/markdown2html) [![](https://img.shields.io/npm/dm/@juexro/@juexro/markdown2html.svg)](https://www.npmjs.com/package/@juexro/markdown2html)
 
 Depend on [markdown-it](https://www.npmjs.com/package/markdown-it)、 [highlight.js](https://www.npmjs.com/package/highlight.js), analyse markdown to html for nodejs.
 
