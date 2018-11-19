@@ -17,7 +17,9 @@
   ],
   "keywords": [
     "markdown",
-    "markdown"
+    "markdown2html",
+    "highlight",
+    "nodejs"
   ],
   "author": "Juexro",
   "license": "MIT",
