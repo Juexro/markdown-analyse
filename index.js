@@ -6,7 +6,7 @@ const plugin = require('@juexro/markdown-it-highlight-code-block')
 
 class MarkdownAnalyse {
   constructor ({filePath, outputPath = 'dist', beforeOutput, cleanDir = false} = {}) {
-    this.keysReg = /\S+:.+\r/gm
+    this.keysReg = /\S+:.+\n/gm
     this.metaReg = /---(([\s\S])*?)---/s
     this.md = new MarkdownIt({
       highlight: function (str, lang) {
