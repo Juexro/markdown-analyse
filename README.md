@@ -49,6 +49,6 @@ new MarkdownAnalyse({
 | Name | Type | Description |
 |---------|--------|-------------|
 | cleanDir     | Boolean | remove outputPath directory at first |
-| filePath     | `Array|String` | file path or directory |
+| filePath     | Array\|String | file path or directory |
 | outputPath   | String | output directory |
 | beforeOutput | Function | `@param {*} [{outputFilePath, meta, content}={}, md]`, you can use `md.render` to render your markdown template.
