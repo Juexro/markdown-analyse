@@ -12,6 +12,23 @@ yarn add @juexro/markdown2html -D
 
 ## usage
 
+markdown
+
+```js
+---
+title: demo
+date: 2018/11/22 17:27:56
+---
+
+# demo
+```
+
+You can add key-values between `--- ---` at the top. And get info in beforeOuput meta.
+
+---
+
+nodejs
+
 ```js
 const fs = require('fs')
 const MarkdownAnalyse = require('@juexro/markdown2html')
@@ -27,7 +44,7 @@ new MarkdownAnalyse({
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title>${meta.title}</title>
         <style>
         ${fs.readFileSync('node_modules/highlight.js/styles/github.css')}
         </style>
