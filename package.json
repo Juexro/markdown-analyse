@@ -1,6 +1,6 @@
 {
   "name": "@juexro/markdown2html",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Analyse markdown to html for nodejs.",
   "main": "index.js",
   "scripts": {

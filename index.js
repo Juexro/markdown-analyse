@@ -1,13 +1,25 @@
 const fs = require('fs')
 const path = require('path')
 const MarkdownIt = require('markdown-it')
+const hljs = require('highlight.js')
 const plugin = require('@juexro/markdown-it-highlight-code-block')
 
 class MarkdownAnalyse {
   constructor ({filePath, outputPath = 'dist', beforeOutput, cleanDir = false} = {}) {
     this.keysReg = /\S+:.+\r/gm
     this.metaReg = /---(([\s\S])*?)---/s
-    this.md = new MarkdownIt().use(plugin)
+    this.md = new MarkdownIt({
+      highlight: function (str, lang) {
+        if (lang && hljs.getLanguage(lang)) {
+          try {
+            return `<pre><ol>${str.split('\n').map((item) => {
+              return item ? `<li><code class="hljs">${hljs.highlightAuto(item).value}</code></li>` : ''
+            }).join('')}</ol></pre>`
+          } catch (__) {}
+        }
+        return ''
+      }
+    }).use(plugin)
     this.filePath = filePath
     this.outputPath = path.resolve(outputPath)
     this.beforeOutput = beforeOutput
